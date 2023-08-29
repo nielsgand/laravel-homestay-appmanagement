@@ -1,5 +1,5 @@
 <footer class="footer">
-    <div class="container-fluid">
+    <div class="container-fluid" style="font-family: 'Noto Sans Thai', sans-serif;">
         <div class="row">
             <div class="col-sm-6">
                 {{-- <script>document.write(new Date().getFullYear())</script> --}}

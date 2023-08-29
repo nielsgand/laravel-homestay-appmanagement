@@ -5,8 +5,8 @@
             <div class="page-header">
                 <div class="row align-items-center">
                     <div class="col"><br>
-                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Booking Create</h4>
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between" style="font-family: 'Noto Sans Thai', sans-serif;">
+                            <h4 class="mb-sm-0">การจองห้องพักใหม่</h4>
 
                         </div>
                     </div>
@@ -16,34 +16,44 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body" style="font-family: 'Noto Sans Thai', sans-serif;">
 
-                            <h4 class="card-title">Room</h4>
-                            <p class="card-title-desc">A mobile and touch friendly input spinner component for Bootstrap</p>
+                            <h4 class="card-title">จองห้องพัก</h4>
+                            <p class="card-title-desc">บ้านแม่ยายโฮมสเตย์ และคอฟฟี่ "ยินบริการทุกระดับประทับใจ"</p>
 
-                            <form class="form-control @error('name') is-invalid @enderror" method="POSTS" action="{{ route('save.record') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('save.record') }}" enctype="multipart/form-data" >
+                                {{-- class="form-control" --}}
+                                @csrf
                                 <div class="row">
                                     <div class="col-lg-2">
                                         <div class="mb-3">
-                                            <label>Booking ID</label>
-                                            <input name="booking_id" type="text" class="form-control @error('name') is-invalid @enderror"  value="{{ old('booking_id') }}" required="">
+                                            <label>รหัสการจอง</label>
+                                            <input name="booking_id" type="text" class="form-control"  value="{{ old('booking_id') }}" required="">
+                                                {{-- Error Message --}}
+                                                @error('booking_id')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="mb-3">
-                                            <label>Name</label>
-                                            <input name="booking_name" type="text" class="form-control  @error('name') is-invalid @enderror"  value="{{ old('booking_name') }}" value=""
+                                            <label>ชื่อ - นามสกุล</label>
+                                            <input name="booking_name" type="text" class="form-control"  value="{{ old('booking_name') }}" value=""
                                                 required="">
-                                        </div>
+                                                {{-- Error Message --}}
+                                                @error('booking_name')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
+                                            </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="mb-3">
-                                            <label name="room_type" class="form-label">Room Type</label>
-                                            <select class="form-control select2 @error('room_type') is-invalid @enderror" name="room_type" value="{{ old('room_type') }}">
+                                            <label name="room_type" class="form-label">ประเภทของห้อง</label>
+                                            <select class="form-control select2" name="room_type" value="{{ old('room_type') }}">
                                                 {{-- <option>Select</option> --}}
                                                 <optgroup label="Bed Size">
-                                                    <option value="AK">Double</option>
-                                                    <option value="HI">Single</option>
+                                                    <option value="AK">ที่นอนคู่</option>
+                                                    <option value="HI">ที่นอนเดี่ยว</option>
                                                 </optgroup>
                                             </select>
 
@@ -51,9 +61,13 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Total Numbers</label>
-                                            <input name="total_numbers" type="text" class="form-control @error('total_numbers') is-invalid @enderror"  value="{{ old('total_numbers') }}"  value=""
+                                            <label>จำนวน</label>
+                                            <input name="total_numbers" type="text" class="form-control"  value="{{ old('total_numbers') }}"  value=""
                                                 required="">
+                                                {{-- Error Message --}}
+                                                @error('booking_name')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                         </div>
                                     </div>
 
@@ -80,11 +94,13 @@
 
                                     <div class="col-lg-6">
                                         <div class="mb-4">
-                                            <label class="form-label">Arrival / Depature Date</label>
+                                            <label class="form-label">วันที่เข้าพัก / วันที่ออก</label>
 
-                                            <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container="#datepicker6">
-                                                <input type="text" class="form-control @error('arrival_date') is-invalid @enderror"  value="{{ old('arrival_date') }}" name="arrival_date" placeholder="Arrival Date">
-                                                <input type="text" class="form-control @error('depature_date') is-invalid @enderror"  value="{{ old('depature_date') }}" name="depature_date" placeholder="Depature Date">
+                                            {{-- <input name="arrival_date" type="text" class="form-control" value="{{ old('arrival_date' )}}">
+                                            <input name="depature_date" type="text" class="form-control" value="{{ old('depature_date' )}}"> --}}
+                                            <div class="input-daterange input-group" id="datepicker6" data-date-format="yyyy-mm-dd" data-date-autoclose="true" data-provide="datepicker" data-date-container="#datepicker6">
+                                                <input type="taxt" class="form-control"  value="{{ old('arrival_date') }}" name="arrival_date" placeholder="วันที่เข้าพัก">
+                                                <input type="taxt" class="form-control"  value="{{ old('depature_date') }}" name="depature_date" placeholder="วันที่ออก">
                                             </div>
                                         </div>
                                     </div><br>
@@ -111,44 +127,59 @@
 
                                     </div> --}}
                                     <br>
-                                    <div class="col-lg-3">
+                                    {{-- <div class="col-lg-3">
                                         <div class="mb-3">
                                             <label>Date</label>
-                                            <input name="created_at" type="text" class="form-control" value=""
-                                                required="">
+                                            <div class="input-group" id="datepicker2">
+                                                <input name="created_at" type="text" class="form-control" placeholder="dd M, yyyy" data-date-format="dd M, yyyy" data-date-container="#datepicker2" data-provide="datepicker" data-date-autoclose="true"  value="{{ old('date') }}" required="">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
                                             <label>Time</label>
-                                            <input name="created_at" type="text" class="form-control" value=""
+                                            <input name="created_at" type="text" class="form-control" value="{{ old('time') }}"
                                                 required="">
+                                                //Error Message
+                                                @error('time')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                         </div>
-                                    </div>
+                                    </div> --}}
 
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Email Address</label>
-                                            <input name="email" type="text" class="form-control @error('email') is-invalid @enderror"  value="{{ old('email') }}"
+                                            <label>อีเมล</label>
+                                            <input name="email" type="text" class="form-control"  value="{{ old('email') }}"
                                                 required="">
+                                                {{-- Error Message --}}
+                                                @error('email')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Ph.Number</label>
-                                            <input name="ph_number" type="text" class="form-control @error('ph_number') is-invalid @enderror"  value="{{ old('ph_number') }}"
+                                            <label>เบอร์โทร</label>
+                                            <input name="ph_number" type="text" class="form-control"  value="{{ old('ph_number') }}"
                                                 required="">
+                                                {{-- Error Message --}}
+                                                @error('ph_number')
+                                                    <span class="text-danger">{{ $message }}</span>
+                                                @enderror
                                         </div>
                                     </div>
                                 </div>
                                 <br><br><br><br><br><br>
                                 <div class="mb-0">
+                                    <br>
                                     <div class="float-end">
+
                                         <button type="submit" value="Save Record" class="btn btn-primary waves-effect waves-light me-1">
-                                            Submit
+                                            ยืนยัน
                                         </button>
                                         <button type="reset" class="btn btn-secondary waves-effect">
-                                            Cancel
+                                            ยกเลิก
                                         </button>
                                     </div>
                                 </div>

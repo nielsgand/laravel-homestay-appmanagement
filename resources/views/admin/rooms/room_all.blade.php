@@ -7,7 +7,7 @@
         <!-- start page title -->
         <div class="row">
             <div class="col-12">
-                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                <div class="page-title-box d-sm-flex align-items-center justify-content-between" style="font-family: 'Noto Sans Thai', sans-serif;">
                     <h4 class="mb-sm-0">Rooms All</h4>
 
                     <div class="page-title-right">
@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" style="font-family: 'Noto Sans Thai', sans-serif;">
 
                         <h4 class="card-title">Default Datatable</h4>
 

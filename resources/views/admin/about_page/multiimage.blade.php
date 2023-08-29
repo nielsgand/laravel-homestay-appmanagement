@@ -9,7 +9,7 @@
         <div class="row">
             <div class="col-xl-6">
                 <div class="card">
-                    <div class="card-body">
+                    <div class="card-body" style="font-family: 'Noto Sans Thai', sans-serif;">
                         <h4 class="card-title">AddMultiImage</h4><br>
 
                         <form method="post" action="{{ route('store.multi.image') }}" enctype="multipart/form-data">

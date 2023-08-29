@@ -14,7 +14,8 @@ return new class extends Migration
     public function up()
     {
         Schema::create('bookings', function (Blueprint $table) {
-            $table->id('booking_id')->nullable();
+            $table->id();
+            $table->string('booking_id')->nullable();
             $table->string('booking_name')->nullable();
             $table->string('room_type')->nullable();
             $table->string('total_numbers')->nullable();

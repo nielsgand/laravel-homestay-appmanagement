@@ -5,8 +5,8 @@
             <div class="page-header">
                 <div class="row align-items-center">
                     <div class="col"><br>
-                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                            <h4 class="mb-sm-0">Booking Edit</h4>
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between" style="font-family: 'Noto Sans Thai', sans-serif;">
+                            <h4 class="mb-sm-0">แก้ไขการจอง</h4>
 
                         </div>
                     </div>
@@ -16,35 +16,35 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
-                        <div class="card-body">
+                        <div class="card-body" style="font-family: 'Noto Sans Thai', sans-serif;">
 
-                            <h4 class="card-title">Room</h4>
+                            <h4 class="card-title">ห้องพัก</h4>
                             <p class="card-title-desc">A mobile and touch friendly input spinner component for Bootstrap</p>
 
                             <form>
                                 <div class="row">
                                     <div class="col-lg-2">
                                         <div class="mb-3">
-                                            <label>Booking ID</label>
+                                            <label>รหัสการจอง</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-5">
                                         <div class="mb-3">
-                                            <label>Name</label>
+                                            <label>ชื่อ - นามสกุล</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-2">
                                         <div class="mb-3">
-                                            <label class="form-label">Room Type</label>
+                                            <label class="form-label">ประเภทของหัองพัก</label>
                                             <select class="form-control select2">
                                                 {{-- <option>Select</option> --}}
                                                 <optgroup label="Bed Size">
-                                                    <option value="AK">Double</option>
-                                                    <option value="HI">Single</option>
+                                                    <option value="AK">ที่นอนคู่</option>
+                                                    <option value="HI">ที่นอนเดี่ยว</option>
                                                 </optgroup>
                                             </select>
 
@@ -52,7 +52,7 @@
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Total Numbers</label>
+                                            <label>จำนวนคน</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
@@ -81,11 +81,11 @@
 
                                     <div class="col-lg-6">
                                         <div class="mb-4">
-                                            <label class="form-label">Arrival / Depature Date</label>
+                                            <label class="form-label">วันที่มาถึง / วันที่กลับ</label>
 
-                                            <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container="#datepicker6">
-                                                <input type="text" class="form-control" name="start" placeholder="Arrival Date">
-                                                <input type="text" class="form-control" name="end" placeholder="Depature Date">
+                                            <div class="input-daterange input-group" id="datepicker6" data-date-format="yyyy-mm-dd" data-date-autoclose="true" data-provide="datepicker" data-date-container="#datepicker6">
+                                                <input type="text" class="form-control" name="start" placeholder="วันที่มาถึง">
+                                                <input type="text" class="form-control" name="end" placeholder="วันที่กลับ">
                                             </div>
                                         </div>
                                     </div><br>
@@ -114,14 +114,14 @@
                                     <br>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Date</label>
+                                            <label>วันที่</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Time</label>
+                                            <label>เวลา</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
@@ -129,14 +129,14 @@
 
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Email Address</label>
+                                            <label>อีเมล</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>
                                     </div>
                                     <div class="col-lg-3">
                                         <div class="mb-3">
-                                            <label>Ph.Number</label>
+                                            <label>เบอร์โทร</label>
                                             <input name="" type="text" class="form-control" value=""
                                                 required="">
                                         </div>

@@ -5,6 +5,7 @@ Version: 2.0.0
 Contact: themesdesign.in@gmail.com
 File: Main Css File
 */
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
 @font-face {
   font-family: "Inter";
@@ -34,6 +35,23 @@ File: Main Css File
   font-display: swap;
   src: url("../fonts/inter-bold.woff2?v=3.13") format("woff2"), url("../fonts/iter-bold.woff?v=3.13") format("woff");
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;700&display=swap");
+@font-face {
+    font-family: "Noto";
+    font-style: "Sans";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/NotoSansThai-VariableFont_wdth,wght ") format("woff2"), url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff");
+  }
+  @font-face {
+    font-family: "Noto";
+    font-style: "Sans";
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff2"), url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff");
+  }
+
 #page-topbar {
   position: fixed;
   top: 0;
@@ -89,7 +107,7 @@ File: Main Css File
   padding: calc(32px / 2) 0;
 }
 .app-search .form-control {
-  border: none;
+  /* border: none; */
   height: 38px;
   padding-right: 40px;
   padding-left: 20px;
@@ -1112,10 +1130,10 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 
 /*!
  * Waves v0.7.6
- * http://fian.my.id/Waves 
- * 
- * Copyright 2014-2018 Alfiana E. Sibuea and other contributors 
- * Released under the MIT license 
+ * http://fian.my.id/Waves
+ *
+ * Copyright 2014-2018 Alfiana E. Sibuea and other contributors
+ * Released under the MIT license
  * https://github.com/fians/Waves/blob/master/LICENSE */
 .waves-effect {
   position: relative;

@@ -28,6 +28,8 @@
 
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
 
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;700&display=swap" rel="stylesheet">
+
         <!-- Select2 -->
         <link href="{{ asset('backend/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css">
         <!-- Datepicker -->
@@ -154,7 +156,7 @@
 
         <script>
             $(function () {
-                $('#datepicker1').datetimepicker();
+                $('#datepicker1','#datepicker6').datetimepicker();
             });
         </script>
 

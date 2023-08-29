@@ -14,28 +14,28 @@ $room = App\Models\Rooms::latest()->get();
                                 <a href="index.html" class="logo__black"><img src="{{ asset('frontend/assets/img/logo/logo_black.png') }}" alt=""></a>
                                 <a href="index.html" class="logo__white"><img src="{{ asset('frontend/assets/img/logo/logo_white.png') }}" alt=""></a>
                             </div>
-                            <div class="navbar__wrap main__menu d-none d-xl-flex">
+                            <div class="navbar__wrap main__menu d-none d-xl-flex " style="font-family: 'Noto Sans Thai', sans-serif;">
                                 <ul class="navigation">
-                                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
-                                    <li><a href="{{ route('home.about')}}">About</a></li>
-                                    <li><a href="services-details.html">Services</a></li>
-                                    <li class="menu-item-has-children"><a href="#">Rooms</a>
+                                    <li class="active"><a href="{{ url('/') }}">หน้าแรก</a></li>
+                                    <li><a href="{{ route('home.about')}}">เกี่ยวกับเรา</a></li>
+                                    <li><a href="services-details.html">บริการ</a></li>
+                                    <li class="menu-item-has-children"><a href="#">ห้องพัก</a>
                                         <ul class="sub-menu">
-                                            <li><a href="{{ url('/room/all') }}">Room</a></li>
+                                            <li><a href="{{ url('/room/all') }}">ห้องพัก</a></li>
                                             {{-- <li><a href="{{ route('room.details',$item->id)}}">Room Details</a></li> --}}
                                         </ul>
                                     </li>
-                                    <li class="menu-item-has-children"><a href="#">Our Blog</a>
+                                    <li class="menu-item-has-children"><a href="#">ข่าวสาร</a>
                                         <ul class="sub-menu">
-                                            <li><a href="blog.html">Our News</a></li>
-                                            <li><a href="blog-details.html">News Details</a></li>
+                                            <li><a href="blog.html">ข่าวสาร</a></li>
+                                            <li><a href="blog-details.html">รายละเอียด</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="contact.html">contact me</a></li>
+                                    <li><a href="contact.html">ติดต่อเรา</a></li>
                                 </ul>
                             </div>
-                            <div class="header__btn d-none d-md-block">
-                                <a href="contact.html" class="btn">Contact me</a>
+                            <div class="header__btn d-none d-md-block" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                <a href="contact.html" class="btn">ติดต่อเรา</a>
                             </div>
                         </nav>
                     </div>

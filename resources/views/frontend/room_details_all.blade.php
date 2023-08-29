@@ -25,7 +25,8 @@
         <!-- portfolio-area -->
         {{-- @php
         $roomall = App\Models\Rooms::find(1);
-    @endphp --}}
+        @endphp --}}
+
         <section class="portfolio__inner">
             <div class="container">
 

@@ -101,7 +101,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  /* font-family: "Playfair Display", serif; */
   font-family: 'Noto Sans Thai', sans-serif;
   color: #191B1E;
   margin-top: 0px;
@@ -1574,8 +1574,8 @@ label {
       display: block;
       position: relative; }
       .navbar__wrap ul li a {
-        font-size: 14px;
-        font-weight: 500;
+        font-size: 16px;
+        font-weight: 700;
         text-transform: uppercase;
         color: #191B1E;
         padding: 40px 25px;

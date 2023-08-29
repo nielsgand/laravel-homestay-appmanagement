@@ -1,12 +1,12 @@
 <div class="vertical-menu">
 
-    <div data-simplebar class="h-100">
+    <div data-simplebar class="h-100" style="font-family: 'Noto Sans Thai', sans-serif;">
 
 
         <!--- Sidemenu -->
         <div id="sidebar-menu">
             <!-- Left Menu Start -->
-            <ul class="metismenu list-unstyled" id="side-menu">
+            <ul class="metismenu list-unstyled" id="side-menu" style="font-family: 'Noto Sans Thai', sans-serif;">
                 <li class="menu-title">Menu</li>
 
                 <li>
@@ -19,52 +19,52 @@
                 <li>
                     <a href="calendar.html" class=" waves-effect">
                         <i class="ri-calendar-2-line"></i>
-                        <span>Calendar</span>
+                        <span>ปฏิทินการจอง</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-calendar-2-line"></i>
-                        <span>Booking</span>
+                        <span>การจองห้องพัก</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('form.allbooking')}}">AllBooking</a></li>
-                        <li><a href="{{ route('form.bookingcreate')}}">CreateBooking</a></li>
-                        <li><a href="{{ route('form.bookingedit')}}">EditBooking</a></li>
+                        <li><a href="{{ route('form.allbooking')}}">รายการจองที่พักทั้งหมด</a></li>
+                        <li><a href="{{ route('form.bookingcreate')}}">แบบเพิ่มการจองที่พัก</a></li>
+                        <li><a href="{{ route('form.bookingedit')}}">แบบแก้ไขการจองที่พัก</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-layout-3-line"></i>
-                        <span>Management</span>
+                        <span>การจัดการห้องพัก</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
-                            <a href="javascript: void(0);" class="has-arrow">Rooms</a>
+                            <a href="javascript: void(0);" class="has-arrow">ห้องพัก</a>
                             <ul class="sub-menu" aria-expanded="true">
-                                <li><a href="{{ route('all.rooms')}}">All Rooms</a></li>
-                                <li><a href="{{ route('add.rooms')}}">Add Rooms</a></li>
+                                <li><a href="{{ route('all.rooms')}}">ห้องพักทั้งหมด</a></li>
+                                <li><a href="{{ route('add.rooms')}}">เพิ่มห้องพัก</a></li>
                             </ul>
                         </li>
 
                     </ul>
                 </li>
 
-                <li class="menu-title">Pages</li>
+                {{-- <li class="menu-title">Pages</li> --}}
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-layout-3-line"></i>
-                        <span>Layout Setup</span>
+                        <span>การจัดการเค้าโครง</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <ul class="sub-menu" aria-expanded="false">
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>Home</span>
+                                    <span>หน้าหลัก</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('home.slide')}}">Home Slide</a></li>
@@ -74,7 +74,7 @@
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>About</span>
+                                    <span>เกี่ยวกับเรา</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('about.page')}}">About Page</a></li>
@@ -86,7 +86,7 @@
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>Blog Category</span>
+                                    <span>ฟีดข่าวสาร</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
                                     <li><a href="{{ route('about.page')}}">About Page</a></li>

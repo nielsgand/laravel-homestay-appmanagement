@@ -4,11 +4,11 @@
 <div class="page-wrapper">
     <div class="content container-fluid">
         <div class="page-header">
-            <div class="row align-items-center">
+            <div class="row align-items-center" style="font-family: 'Noto Sans Thai', sans-serif;">
                 <div class="col"><br>
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">Appointments</h4>
-                        <a href="add-booking.html" class="btn btn-primary float-right veiwbutton ">Add Booking</a>
+                        <h4 class="mb-sm-0">รายการจองที่พัก</h4>
+                        <a href="add-booking.html" class="btn btn-primary float-right veiwbutton">เพิ่มการจอง</a>
                     </div>
                 </div>
             </div>
@@ -16,23 +16,23 @@
         <div class="row">
             <div class="col-sm-12">
                 <div class="card card-table">
-                    <div class="card-body booking_card">
+                    <div class="card-body booking_card" style="font-family: 'Noto Sans Thai', sans-serif;">
                         <div class="table-responsive">
                             <table class="datatable table table-stripped table table-hover table-center mb-0">
                                 <thead>
                                     <tr>
-                                        <th>Booking ID</th>
-                                        <th>Name</th>
-                                        <th>Room Type</th>
-                                        <th>Total Numbers</th>
-                                        <th>Date</th>
-                                        <th>Time</th>
-                                        <th>Arrival Date</th>
-                                        <th>Depature Date</th>
-                                        <th>Email ID</th>
-                                        <th>Ph.Number</th>
-                                        <th>Status</th>
-                                        <th class="text-right">Actions</th>
+                                        <th>รหัสการจอง</th>
+                                        <th>ชื่อ - นามสกุล</th>
+                                        <th>ประเภทของห้อง</th>
+                                        <th>จำนวน</th>
+                                        <th>วันที่</th>
+                                        <th>เวลา</th>
+                                        <th>วันที่เข้าพัก</th>
+                                        <th>วันที่ออก</th>
+                                        <th>อีเมล</th>
+                                        <th>เบอร์โทร</th>
+                                        <th>สถานะ</th>
+                                        <th class="text-right">หมายเหตุ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
