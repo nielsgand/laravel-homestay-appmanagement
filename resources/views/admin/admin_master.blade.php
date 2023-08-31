@@ -34,6 +34,7 @@
         <link href="{{ asset('backend/assets/libs/select2/css/select2.min.css') }}" rel="stylesheet" type="text/css">
         <!-- Datepicker -->
         <link href="{{ asset('backend/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
+        <link href="{{ asset('backend/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css')}}" rel="stylesheet">
 
     </head>
 
@@ -153,6 +154,9 @@
 
         <!-- datepicker -->
         <script src="{{ asset('backend/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+
+        <script src="{{ asset('backend/assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js') }}"></script>
+        <script src="{{ asset('backend/assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js')}}"></script>
 
         <script>
             $(function () {

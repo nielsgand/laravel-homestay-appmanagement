@@ -31,6 +31,21 @@
 /*=============================
 01. Theme default CSS
 =============================*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;700&display=swap");
+@font-face {
+    font-family: "Noto";
+    font-style: "Sans";
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/NotoSansThai-VariableFont_wdth,wght ") format("woff2"), url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff");
+  }
+  @font-face {
+    font-family: "Noto";
+    font-style: "Sans";
+    font-weight: 300;
+    font-display: swap;
+    src: url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff2"), url("../fonts/NotoSansThai-VariableFont_wdth,wght") format("woff");
+  }
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap");
 body {
   font-family: "Roboto", sans-serif;
@@ -137,10 +152,12 @@ h6 {
 
 ul,
 ol {
+    font-family: 'Noto Sans Thai', sans-serif;
   margin: 0px;
   padding: 0px; }
 
 li {
+    font-family: 'Noto Sans Thai', sans-serif;
   list-style: none; }
 
 p {

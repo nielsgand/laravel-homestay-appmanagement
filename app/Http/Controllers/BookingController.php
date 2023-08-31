@@ -11,8 +11,8 @@ class BookingController extends Controller
 {
     // view page all booking
     public function AllBooking() {
-
-        return view('admin.booking.allbooking');
+        $allBooking = Booking::all();
+        return view('admin.booking.allbooking', compact('allBooking'));
     }
 
     //view page edit booking
@@ -51,8 +51,8 @@ class BookingController extends Controller
             'total_numbers'     =>'required|string|max:50',
             'arrival_date'      =>'required|date',
             'depature_date'     =>'required|date',
-            'email'             =>'required|string|max:100',
-            'ph_number'         =>'required|string|max:15',
+            'email'              =>'required|string|max:100',
+            'ph_number'          =>'required|string|max:15',
         ],[
             'booking_name.required' => 'Booking Name is Required',
             'room_type.required' => 'Room Type is Required',
@@ -64,7 +64,7 @@ class BookingController extends Controller
         ]);
 
         Booking::insert([
-            'booking_id'        => $request->booking_id,
+            // 'booking_id'        => $request->booking_id,
             'booking_name'      => $request->booking_name,
             'room_type'         => $request->room_type,
             'total_numbers'     => $request->total_numbers,
@@ -75,17 +75,22 @@ class BookingController extends Controller
             'created_at'        => Carbon::now()
         ]);
 
-        dd($request);
+        // dd($request);
 
         $notification = array(
             'message' => ' Booking Successfully',
             'alert-type' => 'success'
         );
+
+        return redirect()->route('form.allbooking')->with($notification);
     }
 
+    //
 
     //view page edt booking
     public function BookingEdit() {
         return view('admin.bookingbookingedit');
     }
+
+
 }

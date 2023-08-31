@@ -20,6 +20,11 @@
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}">
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/responsive.css') }}">
 
+        {{-- <!-- Icons Css -->
+        <link href="{{ asset('frontend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="{{ asset('frontend/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" /> --}}
+
         <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
 
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lazywasabi/thai-web-fonts@7/fonts/anakotmai/anakotmai-light.woff2">
@@ -27,6 +32,9 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@300;700&display=swap" rel="stylesheet">
+
+        <!-- Datepicker -->
+        <link href="{{ asset('frontend/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
 
     </head>
     <body>
@@ -77,5 +85,11 @@
         <script src="{{ asset('frontend/assets/js/wow.min.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/plugins.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
+
+        <!-- datepicker -->
+        <script src="{{ asset('frontend/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+
+        <!-- App js -->
+        <script src="{{ asset('frontend/assets/js/app.js') }}"></script>
     </body>
 </html>

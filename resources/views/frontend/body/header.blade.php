@@ -35,7 +35,7 @@ $room = App\Models\Rooms::latest()->get();
                                 </ul>
                             </div>
                             <div class="header__btn d-none d-md-block" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                <a href="contact.html" class="btn">ติดต่อเรา</a>
+                                <a href="" class="btn">จองห้องพัก</a>
                             </div>
                         </nav>
                     </div>

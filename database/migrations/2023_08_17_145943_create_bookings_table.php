@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
-            $table->string('booking_id')->nullable();
+            $table->string('booking_id');
             $table->string('booking_name')->nullable();
             $table->string('room_type')->nullable();
             $table->string('total_numbers')->nullable();
@@ -23,6 +23,7 @@ return new class extends Migration
             $table->date('depature_date')->nullable();
             $table->string('email')->nullable();
             $table->string('ph_number')->nullable();
+            $table->string('status')->nullable();
             $table->timestamps();
 
         });

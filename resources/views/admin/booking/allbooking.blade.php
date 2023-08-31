@@ -8,7 +8,7 @@
                 <div class="col"><br>
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                         <h4 class="mb-sm-0">รายการจองที่พัก</h4>
-                        <a href="add-booking.html" class="btn btn-primary float-right veiwbutton">เพิ่มการจอง</a>
+                        <a href="{{ route('form.bookingcreate')}}" class="btn btn-primary float-right veiwbutton">เพิ่มการจอง</a>
                     </div>
                 </div>
             </div>
@@ -25,43 +25,36 @@
                                         <th>ชื่อ - นามสกุล</th>
                                         <th>ประเภทของห้อง</th>
                                         <th>จำนวน</th>
-                                        <th>วันที่</th>
-                                        <th>เวลา</th>
                                         <th>วันที่เข้าพัก</th>
                                         <th>วันที่ออก</th>
                                         <th>อีเมล</th>
                                         <th>เบอร์โทร</th>
+                                        <th>วัน/เวลาที่จอง</th>
                                         <th>สถานะ</th>
                                         <th class="text-right">หมายเหตุ</th>
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    <tr>
-                                        <td>BKG-0001</td>
-                                        <td>
-                                            <h2 class="table-avatar">
-                                            <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-03.jpg" alt="User Image"></a>
-                                            <a href="profile.html">Tommy Bernal <span>#0001</span></a>
-                                            </h2>
-                                        </td>
-                                        <td>Double</td>
-                                        <td>10</td>
-                                        <td>21-03-2020</td>
-                                        <td>11.00 AM</td>
-                                        <td>22-03-2020</td>
-                                        <td>23-03-2020</td>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="2652494b4b5f44435448474a66435e474b564a430845494b">[email&#160;protected]</a></td>
-                                        <td>631-254-6480</td>
-                                        <td>
-                                            <div class="actions"> <a href="#" class="btn btn-sm bg-success-light mr-2">Active</a> </div>
-                                        </td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
+                                    @foreach ($allBooking as $item )
+                                        <tr>
+                                            <td>{{ $item->booking_id }}</td>
+                                            <td>{{ $item->booking_name }}</td>
+                                            <td>{{ $item->room_type }}</td>
+                                            <td>{{ $item->total_numbers }}</td>
+                                            <td>{{ $item->arrival_date }}</td>
+                                            <td>{{ $item->depature_date }}</td>
+                                            <td>{{ $item->email }}</td>
+                                            <td>{{ $item->ph_number }}</td>
+                                            <td>{{ $item->created_at }}</td>
+                                            <td></td>
+                                            <td class="text-right">
+                                                <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    @endforeach
+                                    {{-- <tr>
                                         <td>BKG-0002</td>
                                         <td>
                                             <h2 class="table-avatar">
@@ -85,107 +78,7 @@
                                                 <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
                                             </div>
                                         </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BKG-0003</td>
-                                        <td>
-                                            <h2 class="table-avatar">
-                                            <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-05.jpg" alt="User Image"></a>
-                                            <a href="profile.html">Ellen Thill <span>#0003</span></a>
-                                            </h2>
-                                        </td>
-                                        <td>Double</td>
-                                        <td>10</td>
-                                        <td>21-03-2020</td>
-                                        <td>08.00 AM</td>
-                                        <td>22-03-2020</td>
-                                        <td>23-03-2020</td>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b2d7deded7dcc6dadbdedef2d7cad3dfc2ded79cd1dddf">[email&#160;protected]</a></td>
-                                        <td>508-335-5531</td>
-                                        <td>
-                                            <div class="actions"> <a href="#" class="btn btn-sm bg-success-light mr-2">Active</a> </div>
-                                        </td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BKG-0004</td>
-                                        <td>
-                                            <h2 class="table-avatar">
-                                            <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-06.jpg" alt="User Image"></a>
-                                            <a href="profile.html">Corina Kelsey <span>#0004</span></a>
-                                            </h2>
-                                        </td>
-                                        <td>Single</td>
-                                        <td>15</td>
-                                        <td>21-03-2020</td>
-                                        <td>12.00 AM</td>
-                                        <td>22-03-2020</td>
-                                        <td>23-03-2020</td>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="781b170a111619131d140b1d01381d00191508141d561b1715">[email&#160;protected]</a></td>
-                                        <td>262-260-1170</td>
-                                        <td>
-                                            <div class="actions"> <a href="#" class="btn btn-sm bg-success-light mr-2"> Active</a> </div>
-                                        </td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BKG-0005</td>
-                                        <td>
-                                            <h2 class="table-avatar">
-                                            <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-07.jpg" alt="User Image"></a>
-                                            <a href="profile.html">Carolyn Lane <span>#0005</span></a>
-                                            </h2>
-                                        </td>
-                                        <td>Double</td>
-                                        <td>12</td>
-                                        <td>21-03-2020</td>
-                                        <td>06.00 AM</td>
-                                        <td>22-03-2020</td>
-                                        <td>23-03-2020</td>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6c0f0d1e03001502000d02092c09140d011c0009420f0301">[email&#160;protected]</a></td>
-                                        <td>570-458-0070</td>
-                                        <td>
-                                            <div class="actions"> <a href="#" class="btn btn-sm bg-success-light mr-2">Active</a> </div>
-                                        </td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>BKG-0006</td>
-                                        <td>
-                                            <h2 class="table-avatar">
-                                                <a href="profile.html" class="avatar avatar-sm mr-2"><img class="avatar-img rounded-circle" src="assets/img/profiles/avatar-08.jpg" alt="User Image"></a>
-                                                <a href="profile.html">David Alvarez <span>#0006</span></a>
-                                            </h2>
-                                        </td>
-                                        <td>Single</td>
-                                        <td>7</td>
-                                        <td>21-03-2020</td>
-                                        <td>10.00 AM</td>
-                                        <td>22-03-2020</td>
-                                        <td>23-03-2020</td>
-                                        <td><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fb9f9a8d929f9a978d9a899e81bb9e839a968b979ed5989496">[email&#160;protected]</a></td>
-                                        <td>212-414-9510</td>
-                                        <td>
-                                            <div class="actions"> <a href="#" class="btn btn-sm bg-success-light mr-2">Inactive </a> </div>
-                                        </td>
-                                        <td class="text-right">
-                                            <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>
-                                                <div class="dropdown-menu dropdown-menu-right"> <a class="dropdown-item" href="edit-booking.html"><i class="fas fa-pencil-alt m-r-5"></i> Edit</a> <a class="dropdown-item" href="#" data-toggle="modal" data-target="#delete_asset"><i class="fas fa-trash-alt m-r-5"></i> Delete</a> </div>
-                                            </div>
-                                        </td>
-                                    </tr>
+                                    </tr> --}}
                                 </tbody>
                             </table>
                         </div>
