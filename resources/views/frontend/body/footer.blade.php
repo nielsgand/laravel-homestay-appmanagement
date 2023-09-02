@@ -4,20 +4,18 @@
             <div class="col-lg-4">
                 <div class="footer__widget">
                     <div class="fw-title">
-                        <h5 class="sub-title">Contact us</h5>
+                        <h5 class="sub-title">ติดต่อเรา</h5>
                         <h4 class="title">+6695-572-6722</h4>
                     </div>
                     <div class="footer__widget__text">
-                        <p>There are many variations of passages of lorem ipsum
-                        available but the majority have suffered alteration
-                        in some form is also here.</p>
+                        <p>ผ้าทอขนแกะ กาแฟสด เสาวรสหวาน ตำนานถิ่นละว้า นาขั้นบรรได ลือนามไกลเครื่องเงิน</p>
                     </div>
                 </div>
             </div>
             <div class="col-xl-3 col-lg-4 col-sm-6">
                 <div class="footer__widget">
                     <div class="fw-title">
-                        <h5 class="sub-title">my address</h5>
+                        <h5 class="sub-title">ที่อยู่</h5>
                         <h4 class="title" style="font-family: 'Noto Sans Thai', sans-serif;">บ้านห้วยห้อม</h4>
                     </div>
                     <div class="footer__widget__address" style="font-family: 'Noto Sans Thai', sans-serif;">
@@ -29,7 +27,7 @@
             <div class="col-xl-3 col-lg-4 col-sm-6">
                 <div class="footer__widget">
                     <div class="fw-title">
-                        <h5 class="sub-title">Follow me</h5>
+                        <h5 class="sub-title">ติดตามเรา</h5>
                         <h4 class="title">socially connect</h4>
                     </div>
                     <div class="footer__widget__social">

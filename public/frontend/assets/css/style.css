@@ -1453,11 +1453,13 @@ label {
     align-items: center; }
   .switcher__tab .light__mode__title::after {
     content: "\f185";
+    font-family: 'Noto Sans Thai', sans-serif;
     font-family: "Font Awesome 5 Pro";
     margin-left: 13px;
     color: #FCAF17; }
   .switcher__tab .dark__mode__title::before {
     content: "\f755";
+    font-family: 'Noto Sans Thai', sans-serif;
     font-family: "Font Awesome 5 Pro";
     margin-right: 13px;
     color: #191B1E; }
@@ -2177,6 +2179,7 @@ Breadcrumb
   text-transform: uppercase;
   font-weight: 700;
   font-size: 15px;
+  font-family: 'Noto Sans Thai', sans-serif;
   margin-bottom: 10px;
   letter-spacing: 0.1em; }
 
@@ -2464,7 +2467,7 @@ Breadcrumb
     .about__exp__list li:last-child {
       margin-bottom: 0; }
   .about__exp__list .title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px; }
@@ -2483,7 +2486,7 @@ Breadcrumb
       .about__skill__item {
         width: 100%; } }
     .about__skill__item .title {
-      font-family: "Roboto", sans-serif;
+      font-family: 'Noto Sans Thai', sans-serif;
       color: #68666C;
       text-transform: uppercase;
       font-size: 14px;
@@ -2903,7 +2906,7 @@ Breadcrumb
     .services__sidebar .widget:last-child {
       margin-bottom: 0; }
     .services__sidebar .widget .title {
-      font-family: "Roboto", sans-serif;
+        font-family: 'Noto Sans Thai', sans-serif;
       font-size: 24px;
       margin-bottom: 26px; }
   .services__sidebar .sidebar__contact input {
@@ -3281,6 +3284,7 @@ Breadcrumb
       .portfolio__overlay__content .link::after {
         content: "\f178";
         display: inline-block;
+        font-family: 'Noto Sans Thai', sans-serif;
         font-family: "Font Awesome 5 Pro";
         font-weight: 400;
         margin-left: 5px; }
@@ -3432,6 +3436,7 @@ Breadcrumb
           margin-top: 20px; } }
       .portfolio__inner__content .link::after {
         content: "\f178";
+        font-family: 'Noto Sans Thai', sans-serif;
         font-family: "Font Awesome 5 Pro";
         margin-left: 5px; }
       .portfolio__inner__content .link:hover {
@@ -3679,6 +3684,7 @@ Breadcrumb
   .testimonial__content p {
     margin-bottom: 0;
     font-family: "Playfair Display", serif;
+    font-family: 'Noto Sans Thai', sans-serif;
     color: #191B1E;
     font-size: 20px;
     line-height: 1.6;
@@ -4033,6 +4039,7 @@ Breadcrumb
       .blog__post__content .read__more::after {
         content: "\f30b";
         font-family: "Font Awesome 5 Pro";
+        font-family: 'Noto Sans Thai', sans-serif;
         font-weight: 700;
         margin-left: 8px; }
       .blog__post__content .read__more:hover {
@@ -4175,7 +4182,7 @@ Breadcrumb
     .blog__sidebar .widget:last-child {
       margin-bottom: 0; }
     .blog__sidebar .widget .widget-title {
-      font-family: "Roboto", sans-serif;
+      font-family: 'Noto Sans Thai', sans-serif;
       font-size: 24px;
       font-weight: 500;
       margin-bottom: 35px;
@@ -4240,7 +4247,7 @@ Breadcrumb
     display: block; }
 
 .rc__post__content .title {
-  font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 12px;
@@ -4279,6 +4286,7 @@ Breadcrumb
   .sidebar__cat__item a::after {
     content: "\f178";
     font-family: "Font Awesome 5 Pro";
+    font-family: 'Noto Sans Thai', sans-serif;
     margin-left: 5px; }
   .sidebar__cat__item a:hover {
     font-weight: 500;
@@ -4298,6 +4306,7 @@ Breadcrumb
   .sidebar__comment__item a::before {
     content: "\f4b6";
     font-family: "Font Awesome 5 Pro";
+    font-family: 'Noto Sans Thai', sans-serif;
     margin-right: 7px;
     color: #FCAF17;
     font-weight: 600; }
@@ -4447,6 +4456,7 @@ Breadcrumb
     .blog__next__prev__item > .title::before {
       content: "\f100";
       font-family: "Font Awesome 5 Pro";
+      font-family: 'Noto Sans Thai', sans-serif;
       font-weight: 500;
       margin-right: 10px; }
   @media (max-width: 767.98px) {
@@ -4460,6 +4470,7 @@ Breadcrumb
   .blog__next__prev__item.next_post > .title::after {
     content: "\f101";
     font-family: "Font Awesome 5 Pro";
+    font-family: 'Noto Sans Thai', sans-serif;
     font-weight: 500;
     margin-left: 10px; }
   .blog__next__prev__item.next_post .blog__next__prev__post {
@@ -4479,7 +4490,7 @@ Breadcrumb
     flex: 0 0 104px;
     margin-right: 20px; }
   .blog__next__prev__content .title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
     margin-bottom: 0;
     line-height: 1.5;
     font-size: 18px; }
@@ -4495,7 +4506,7 @@ Breadcrumb
 .comment__title {
   margin-bottom: 40px; }
   .comment__title .title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 0; }
@@ -4549,7 +4560,7 @@ Breadcrumb
     width: 80%;
     flex: 0 0 80%; }
   .comment__avatar__info .title {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
     font-size: 18px;
     margin-bottom: 0;
     margin-bottom: 6px; }
@@ -4679,7 +4690,7 @@ Breadcrumb
 .homeContact__content .mail {
   font-size: 35px;
   letter-spacing: -0.01em;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
   margin-bottom: 0;
   margin-top: 28px; }
   @media (max-width: 991.98px) {
@@ -4771,6 +4782,7 @@ Breadcrumb
     .homeContact__form form [type=submit]::after {
       content: "\f1d8";
       font-family: "Font Awesome 5 Pro";
+      font-family: 'Noto Sans Thai', sans-serif;
       font-weight: 700;
       margin-left: 8px; }
     .homeContact__form form [type=submit]:hover {
@@ -4866,8 +4878,7 @@ Breadcrumb
       max-height: 60px; }
   .contact__info__content .title {
     text-transform: capitalize;
-    font-family: "Roboto", sans-serif;
-    margin-bottom: 7px;
+    font-family: 'Noto Sans Thai', sans-serif;
     font-size: 24px;
     font-weight: 500; }
   .contact__info__content span {
@@ -4890,15 +4901,15 @@ Breadcrumb
       margin-bottom: 23px; }
       .footer__widget .fw-title .sub-title {
         color: #898989;
-        font-family: "Roboto", sans-serif;
-        font-size: 12px;
+        font-family: 'Noto Sans Thai', sans-serif;
+        font-size: 15px;
         letter-spacing: 0.2em;
         text-transform: uppercase;
         line-height: 1;
         margin-bottom: 15px; }
       .footer__widget .fw-title .title {
         color: #fff;
-        font-family: "Roboto", sans-serif;
+        font-family: 'Noto Sans Thai', sans-serif;
         font-size: 22px;
         text-transform: uppercase;
         margin-bottom: 0; }

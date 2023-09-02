@@ -98,38 +98,38 @@
         <!-- portfolio-area-end -->
 
 
-        <!-- contact-area -->
-        <section class="homeContact homeContact__style__two">
+        <!-- Booking-area -->
+        {{-- <section class="homeContact homeContact__style__two">
             <div class="container">
                 <div class="homeContact__wrap">
                     <div class="row">
-                        <div class="col-lg-6">
-                            <div class="section__title">
-                                <span class="sub-title">07 - Say hello</span>
-                                <h2 class="title">Any questions? Feel free <br> to contact</h2>
+                        <div class="col-lg-8">
+                            <div class="section__title" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                <span class="sub-title" style="font-size: 30px">จองห้องนี้</span>
                             </div>
-                            <div class="homeContact__content">
-                                <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                                    suffered alteration in some form</p>
-                                <h2 class="mail"><a href="mailto:Info@webmail.com">Info@webmail.com</a></h2>
+                            <div>
+                                    <label class="form-label" style="font-family: 'Noto Sans Thai', sans-serif;"><b>วันที่เข้าพัก / วันที่ออก</b></label>
+                                    <div class="input-daterange input-group" id="datepicker6"
+                                        data-date-format="yyyy-mm-dd" data-date-autoclose="true"
+                                        data-provide="datepicker" data-date-container="#datepicker6" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                        <input type="taxt" class="form-control" value="{{ old('arrival_date') }}"
+                                            name="arrival_date" placeholder="วันที่เข้าพัก" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                        <input type="taxt" class="form-control"
+                                            value="{{ old('depature_date') }}" name="depature_date"
+                                            placeholder="วันที่ออก" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                    </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="homeContact__form">
-                                <form action="#">
-                                    <input type="text" placeholder="Enter name*">
-                                    <input type="email" placeholder="Enter mail*">
-                                    <input type="number" placeholder="Enter number*">
-                                    <textarea name="message" placeholder="Enter Massage*"></textarea>
-                                    <button type="submit">Send Message</button>
-                                </form>
+                        <div class="col-lg-4" style="font-family: 'Noto Sans Thai', sans-serif;"><br><br>
+                            <div class="float-end" style="padding:15px">
+                                <button type="submit" value="Booking Now" class="btn btn-primary waves-effect waves-light me-2">จองห้องนี้</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- contact-area-end -->
+        </section> --}}
+        <!-- Booking-area-end -->
 
     </main>
 @endsection

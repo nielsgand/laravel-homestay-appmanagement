@@ -89,8 +89,12 @@ class BookingController extends Controller
 
     //view page edt booking
     public function BookingEdit() {
-        return view('admin.bookingbookingedit');
+        return view('admin.booking.bookingedit');
     }
+
+    // //======================================================== Front End Function =============================================================================//
+
+
 
 
 }
