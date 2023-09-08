@@ -100,31 +100,37 @@
     <section class="homeContact homeContact__style__two">
         <div class="container">
             <div class="homeContact__wrap">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="section__title" style="font-family: 'Noto Sans Thai', sans-serif;">
-                            <span class="sub-title" style="font-size: 30px">จองห้องนี้</span>
-                            {{-- <h2 class="title">Any questions? Feel free <br> to contact</h2> --}}
+                <form action="{{ route('user.booking') }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="section__title" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                <span class="sub-title" style="font-size: 30px">เลือกวันที่เข้าพัก</span>
+                                {{-- <h2 class="title">Any questions? Feel free <br> to contact</h2> --}}
+                            </div>
+                            <div>
+                                <input class="form-control" type="hidden" value="{{ $allroom->id }}" name="room_id">
+                            </div>
+                            <div>
+                                    <label class="form-label" style="font-family: 'Noto Sans Thai', sans-serif;"><b>วันที่เข้าพัก / วันที่ออก</b></label>
+                                    <div class="input-daterange input-group" id="datepicker6"
+                                        data-date-format="yyyy-mm-dd" data-date-autoclose="true"
+                                        data-provide="datepicker" data-date-container="#datepicker6" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                        <input type="taxt" class="form-control" value=""
+                                            name="arrival_date" placeholder="วันที่เข้าพัก" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                        <input type="taxt" class="form-control"
+                                            value="" name="depature_date"
+                                            placeholder="วันที่ออก" style="font-family: 'Noto Sans Thai', sans-serif;">
+                                    </div>
+                            </div>
                         </div>
-                        <div>
-                                <label class="form-label" style="font-family: 'Noto Sans Thai', sans-serif;"><b>วันที่เข้าพัก / วันที่ออก</b></label>
-                                <div class="input-daterange input-group" id="datepicker6"
-                                    data-date-format="yyyy-mm-dd" data-date-autoclose="true"
-                                    data-provide="datepicker" data-date-container="#datepicker6" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                    <input type="taxt" class="form-control" value="{{ old('arrival_date') }}"
-                                        name="arrival_date" placeholder="วันที่เข้าพัก" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                    <input type="taxt" class="form-control"
-                                        value="{{ old('depature_date') }}" name="depature_date"
-                                        placeholder="วันที่ออก" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                </div>
+                        <div class="col-lg-4" style="font-family: 'Noto Sans Thai', sans-serif;"><br><br>
+                            <div class="float-end" style="padding:15px">
+                                <button type="submit" value="UserBooking" class="btn btn-primary waves-effect waves-light me-2">จองห้องนี้</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" style="font-family: 'Noto Sans Thai', sans-serif;"><br><br>
-                        <div class="float-end" style="padding:15px">
-                            <button type="submit" value="Booking Now" class="btn btn-primary waves-effect waves-light me-2">จองห้องนี้</button>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
     </section>

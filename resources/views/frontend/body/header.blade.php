@@ -11,8 +11,8 @@ $room = App\Models\Rooms::latest()->get();
                     <div class="menu__wrap">
                         <nav class="menu__nav">
                             <div class="logo">
-                                <a href="index.html" class="logo__black"><img src="{{ asset('frontend/assets/img/logo/logo_black.png') }}" alt=""></a>
-                                <a href="index.html" class="logo__white"><img src="{{ asset('frontend/assets/img/logo/logo_white.png') }}" alt=""></a>
+                                <a href="{{ url('/') }}" class="logo__black"><img src="{{ asset('frontend/assets/img/logo/logo_black.png') }}" alt=""></a>
+                                <a href="{{ url('/') }}" class="logo__white"><img src="{{ asset('frontend/assets/img/logo/logo_white.png') }}" alt=""></a>
                             </div>
                             <div class="navbar__wrap main__menu d-none d-xl-flex " style="font-family: 'Noto Sans Thai', sans-serif;">
                                 <ul class="navigation">
@@ -35,7 +35,7 @@ $room = App\Models\Rooms::latest()->get();
                                 </ul>
                             </div>
                             <div class="header__btn d-none d-md-block" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                <a href="{{ url('/booking')}}" class="btn">จองห้องพัก</a>
+                                <a href="{{ route('all.room.details')}}" class="btn">จองห้องพัก</a>
                             </div>
                         </nav>
                     </div>

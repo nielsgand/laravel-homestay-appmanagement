@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
+use App\Models\Customer;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 
@@ -85,16 +86,55 @@ class BookingController extends Controller
         return redirect()->route('form.allbooking')->with($notification);
     }
 
-    //
+
 
     //view page edt booking
-    public function BookingEdit() {
+    public function BookingEdit(Request $request) {
         return view('admin.booking.bookingedit');
     }
 
-    // //======================================================== Front End Function =============================================================================//
+    public function Status() {
 
+    }
 
+    // //======================================================== Frontend Function =============================================================================//
+
+    //view page user booking
+    public function UserBooking(Request $request) {
+
+        // dd($request);
+
+        $userbooking = $request;
+
+        return view('frontend.user_booking', compact('userbooking'));
+    }
+
+    //user datepicker
+    public function Databooking(Request $request) {
+        // dd($request);
+
+        Booking::insert([
+            // 'booking_id'        => $request->booking_id,
+            'booking_name'      => $request->booking_name,
+            'room_type'         => $request->room_type,
+            'room_id'           => $request->room_id,
+            'total_numbers'     => $request->total_numbers,
+            'arrival_date'      => $request->arrival_date,
+            'depature_date'     => $request->depature_date,
+            'email'             => $request->email,
+            'ph_number'         => $request->ph_number,
+            'created_at'        => Carbon::now()
+        ]);
+
+        Customer::insert([
+
+            'name'      => $request->booking_name,
+            'email'             => $request->email,
+            'phonenumber'         => $request->ph_number,
+            'created_at'        => Carbon::now()
+        ]);
+
+    }
 
 
 }

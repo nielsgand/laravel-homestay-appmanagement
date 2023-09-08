@@ -21,8 +21,8 @@
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/responsive.css') }}">
 
         {{-- <!-- Icons Css -->
-        <link href="{{ asset('frontend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
-        <!-- App Css-->
+        <link href="{{ asset('frontend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" /> --}}
+        {{-- <!-- App Css-->
         <link href="{{ asset('frontend/assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" /> --}}
 
         <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
@@ -36,6 +36,8 @@
         <!-- Datepicker -->
         <link href="{{ asset('frontend/assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css')}}" rel="stylesheet">
 
+        <!-- twitter-bootstrap-wizard css -->
+        <link rel="stylesheet" href="{{ asset('frontend/assets/libs/twitter-bootstrap-wizard/prettify.css') }}">
     </head>
     <body>
 
@@ -86,8 +88,22 @@
         <script src="{{ asset('frontend/assets/js/plugins.js') }}"></script>
         <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
 
+        <script src="{{ asset('frontend/assets/libs/jquery/jquery.min.js') }}"></script>
+        <script src="{{ asset('frontend/assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('frontend/assets/libs/metismenu/metisMenu.min.js') }}"></script>
+        <script src="{{ asset('frontend/assets/libs/simplebar/simplebar.min.js') }}"></script>
+        <script src="{{ asset('frontend/assets/libs/node-waves/waves.min.js') }}"></script>
+
         <!-- datepicker -->
         <script src="{{ asset('frontend/assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js') }}"></script>
+
+        <!-- twitter-bootstrap-wizard js -->
+        <script src="{{ asset('frontend/assets/libs/twitter-bootstrap-wizard/jquery.bootstrap.wizard.min.js') }}"></script>
+
+        <script src="{{ asset('frontend/assets/libs/twitter-bootstrap-wizard/prettify.js') }}"></script>
+
+        <!-- form wizard init -->
+        <script src="{{ asset('frontend/assets/js/pages/form-wizard.init.js') }}"></script>
 
         <!-- App js -->
         <script src="{{ asset('frontend/assets/js/app.js') }}"></script>

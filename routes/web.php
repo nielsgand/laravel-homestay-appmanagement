@@ -6,7 +6,6 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Home\AboutController;
 use App\Http\Controllers\Home\HomeSliderController;
 use App\Http\Controllers\Home\RoomsController;
-use App\Http\Controllers\Home\UserBookingController;
 use App\Models\Booking;
 
 /*
@@ -92,10 +91,10 @@ Route::get('form/allbooking', [App\Http\Controllers\BookingController::class, 'A
 Route::get('form/booking/edit', [App\Http\Controllers\BookingController::class, 'BookingEdit'])->middleware('auth')->name('form.bookingedit');
 Route::get('form/booking/create', [App\Http\Controllers\BookingController::class, 'BookingCreate'])->middleware('auth')->name('form.bookingcreate');
 Route::post('form/booking/save', [App\Http\Controllers\BookingController::class, 'SaveRecord'])->middleware('auth')->name('save.record');
-// Route::post('/booking', [App\Http\Controllers\BookingController::class, 'UserBooking'])->name('user.booking');
+Route::get('/booking', [App\Http\Controllers\BookingController::class, 'UserBooking'])->name('user.booking');
+Route::post('/booking', [App\Http\Controllers\BookingController::class, 'UserBooking'])->name('user.booking');
+Route::post('/datebooking', [App\Http\Controllers\BookingController::class, 'DataBooking'])->name('user.databooking');
 
 require __DIR__.'/auth.php';
 
-// Route::controller(BookingController::class)->group(function () {
-//     Route::get('/booking', 'UserBooking');
-// });
+

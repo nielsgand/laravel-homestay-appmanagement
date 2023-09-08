@@ -4781,7 +4781,7 @@ Breadcrumb
     line-height: 1; }
     .homeContact__form form [type=submit]::after {
       content: "\f1d8";
-      font-family: "Font Awesome 5 Pro";
+      /* font-family: "Font Awesome 5 Pro"; */
       font-family: 'Noto Sans Thai', sans-serif;
       font-weight: 700;
       margin-left: 8px; }
@@ -4812,6 +4812,7 @@ Breadcrumb
   background: #fff;
   padding: 80px;
   box-shadow: 1px -1px 20px 10px rgba(110, 125, 134, 0.03);
+  font-family: 'Noto Sans Thai', sans-serif;
   text-align: center;
   margin: -170px 0 60px;
   position: relative;

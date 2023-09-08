@@ -132,7 +132,4 @@ class RoomsController extends Controller
         return view('frontend.room_details' ,compact('allroom'));
     }
 
-
-
-
 }
