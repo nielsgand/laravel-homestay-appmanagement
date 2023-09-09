@@ -7,14 +7,14 @@
             <div class="row align-items-center" style="font-family: 'Noto Sans Thai', sans-serif;">
                 <div class="col"><br>
                     <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                        <h4 class="mb-sm-0">รายการจองที่พัก</h4>
+                        <h3 class="mb-sm-0" style="font-family: 'Noto Sans Thai', sans-serif; font-weight: 700;">รายการจองที่พัก</h3>
                         <a href="{{ route('form.bookingcreate')}}" class="btn btn-primary float-right veiwbutton">เพิ่มการจอง</a>
                     </div>
                 </div>
             </div>
         </div><br>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-lg-12">
                 <div class="card card-table">
                     <div class="card-body booking_card" style="font-family: 'Noto Sans Thai', sans-serif;">
                         <div class="table-responsive">
@@ -49,7 +49,13 @@
                                             <td>{{ $item->ph_number }}</td>
                                             <td>{{ $item->created_at }}</td>
                                             <td>
-                                                <div class="actions"> <a href="#" class="btn btn-outline-warning mr-2">รอการยืนยัน</a> </div>
+                                                <div class="actions">
+                                                    @if ($item->status = 1)
+                                                        <a href="#" class="btn btn-outline-warning mr-2">รอการยืนยัน</a>
+                                                    @else
+                                                        <a href="#" class="btn btn-outline-success mr-2">ยืนยัน</a>
+                                                    @endif
+                                                </div>
                                             </td>
                                             <td class="text-right">
                                                 <div class="dropdown dropdown-action"> <a href="#" class="action-icon dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><i class="fas fa-ellipsis-v ellipse_color"></i></a>

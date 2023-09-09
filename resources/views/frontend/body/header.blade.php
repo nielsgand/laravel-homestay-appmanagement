@@ -34,8 +34,15 @@ $room = App\Models\Rooms::latest()->get();
                                     <li><a href="contact.html">ติดต่อเรา</a></li>
                                 </ul>
                             </div>
+                            <div class="col-xl-3 col-lg-4 col-sm-6">
+                                <i class="fas fa-address-book"></i>
+                                 @foreach ($user.databooking as $item)
+                                    <p>{{user.databooking->booking_name}}</p>
+                                 @endforeach
+                            </div>
+
                             <div class="header__btn d-none d-md-block" style="font-family: 'Noto Sans Thai', sans-serif;">
-                                <a href="{{ route('all.room.details')}}" class="btn">จองห้องพัก</a>
+                                <a href="{{ route('all.room.details') }}" class="btn">จองห้องพัก</a>
                             </div>
                         </nav>
                     </div>

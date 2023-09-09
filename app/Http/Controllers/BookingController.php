@@ -134,6 +134,8 @@ class BookingController extends Controller
             'created_at'        => Carbon::now()
         ]);
 
+        return view('frontend.user_booking', compact('userbooking'));
+
     }
 
 

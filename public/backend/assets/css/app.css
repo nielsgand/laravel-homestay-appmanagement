@@ -484,7 +484,7 @@ body[data-layout=horizontal] .footer {
 }
 #sidebar-menu .has-arrow:after {
   content: "\f0140";
-  font-family: "Material Design Icons";
+  font-family: 'Noto Sans Thai', sans-serif;
   display: block;
   float: left;
   -webkit-transition: -webkit-transform 0.2s;
@@ -493,7 +493,7 @@ body[data-layout=horizontal] .footer {
   transition: transform 0.2s, -webkit-transform 0.2s;
   font-size: 1rem;
 }
-#sidebar-menu ul li a {
+#-menu ul li a {
   display: block;
   padding: 0.625rem 1.5rem;
   color: #6c757d;
@@ -501,14 +501,15 @@ body[data-layout=horizontal] .footer {
   font-size: 13.3px;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
-  font-family: "Inter", sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+  /* font-family: "Inter", sans-serif; */
   font-weight: 500;
 }
 #sidebar-menu ul li a i {
   display: inline-block;
   min-width: 1.5rem;
   padding-bottom: 0.125em;
-  font-size: 1.1rem;
+  font-size: 2rem;
   line-height: 1.40625rem;
   vertical-align: middle;
   color: #505d69;
@@ -530,7 +531,7 @@ body[data-layout=horizontal] .footer {
 }
 #sidebar-menu ul li ul.sub-menu li a {
   padding: 0.4rem 3.2rem 0.4rem 1.5rem;
-  font-size: 13px;
+  font-size: 14px;
   color: #7c8a96;
 }
 #sidebar-menu ul li ul.sub-menu li ul.sub-menu {
@@ -538,7 +539,7 @@ body[data-layout=horizontal] .footer {
 }
 #sidebar-menu ul li ul.sub-menu li ul.sub-menu li a {
   padding: 0.4rem 4.2rem 0.4rem 1.5rem;
-  font-size: 13.5px;
+  font-size: 14px;
 }
 
 .menu-title {
@@ -546,11 +547,12 @@ body[data-layout=horizontal] .footer {
   letter-spacing: 0.05em;
   pointer-events: none;
   cursor: default;
-  font-size: 11px;
+  font-size: 15px;
   text-transform: uppercase;
   color: #505d69;
   font-weight: 600;
-  font-family: "Inter", sans-serif;
+  font-family: 'Noto Sans Thai', sans-serif;
+  /* font-family: "Inter", sans-serif; */
   opacity: 0.5;
 }
 

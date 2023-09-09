@@ -19,33 +19,33 @@
                 <li>
                     <a href="calendar.html" class=" waves-effect">
                         <i class="ri-calendar-2-line"></i>
-                        <span>ปฏิทินการจอง</span>
+                        <span style="font-family: 'Noto Sans Thai', sans-serif;">ปฏิทินการจอง</span>
                     </a>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-calendar-2-line"></i>
-                        <span>การจองห้องพัก</span>
+                        <span style="font-family: 'Noto Sans Thai', sans-serif;">การจองห้องพัก</span>
                     </a>
-                    <ul class="sub-menu" aria-expanded="false">
-                        <li><a href="{{ route('form.allbooking')}}">รายการจองที่พักทั้งหมด</a></li>
-                        <li><a href="{{ route('form.bookingcreate')}}">แบบเพิ่มการจองที่พัก</a></li>
-                        <li><a href="{{ route('form.bookingedit')}}">แบบแก้ไขการจองที่พัก</a></li>
+                    <ul class="sub-menu" aria-expanded="false" >
+                        <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('form.allbooking')}}">รายการจองที่พักทั้งหมด</a></li>
+                        <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('form.bookingcreate')}}">แบบเพิ่มการจองที่พัก</a></li>
+                        <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('form.bookingedit')}}">แบบแก้ไขการจองที่พัก</a></li>
                     </ul>
                 </li>
 
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-layout-3-line"></i>
-                        <span>การจัดการห้องพัก</span>
+                        <span style="font-family: 'Noto Sans Thai', sans-serif;">การจัดการห้องพัก</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <li>
                             <a href="javascript: void(0);" class="has-arrow">ห้องพัก</a>
                             <ul class="sub-menu" aria-expanded="true">
-                                <li><a href="{{ route('all.rooms')}}">ห้องพักทั้งหมด</a></li>
-                                <li><a href="{{ route('add.rooms')}}">เพิ่มห้องพัก</a></li>
+                                <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('all.rooms')}}">ห้องพักทั้งหมด</a></li>
+                                <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('add.rooms')}}">เพิ่มห้องพัก</a></li>
                             </ul>
                         </li>
 
@@ -57,41 +57,41 @@
                 <li>
                     <a href="javascript: void(0);" class="has-arrow waves-effect">
                         <i class="ri-layout-3-line"></i>
-                        <span>การจัดการเค้าโครง</span>
+                        <span style="font-family: 'Noto Sans Thai', sans-serif;">การจัดการเค้าโครง</span>
                     </a>
                     <ul class="sub-menu" aria-expanded="true">
                         <ul class="sub-menu" aria-expanded="false">
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>หน้าหลัก</span>
+                                    <span style="font-family: 'Noto Sans Thai', sans-serif;">หน้าหลัก</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{ route('home.slide')}}">Home Slide</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('home.slide')}}">Home Slide</a></li>
                                 </ul>
                             </li>
 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>เกี่ยวกับเรา</span>
+                                    <span style="font-family: 'Noto Sans Thai', sans-serif;">เกี่ยวกับเรา</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{ route('about.page')}}">About Page</a></li>
-                                    <li><a href="{{ route('about.multi.image')}}">About Multi Page</a></li>
-                                    <li><a href="{{ route('all.multi.image')}}">All Multi Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('about.page')}}">About Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('about.multi.image')}}">About Multi Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('all.multi.image')}}">All Multi Page</a></li>
                                 </ul>
                             </li>
 
                             <li>
                                 <a href="javascript: void(0);" class="has-arrow waves-effect">
                                     <i class="ri-profile-line"></i>
-                                    <span>ฟีดข่าวสาร</span>
+                                    <span style="font-family: 'Noto Sans Thai', sans-serif;">ฟีดข่าวสาร</span>
                                 </a>
                                 <ul class="sub-menu" aria-expanded="false">
-                                    <li><a href="{{ route('about.page')}}">About Page</a></li>
-                                    <li><a href="{{ route('about.multi.image')}}">About Multi Page</a></li>
-                                    <li><a href="{{ route('all.multi.image')}}">All Multi Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('about.page')}}">About Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('about.multi.image')}}">About Multi Page</a></li>
+                                    <li><a style="font-family: 'Noto Sans Thai', sans-serif;" href="{{ route('all.multi.image')}}">All Multi Page</a></li>
                                 </ul>
                             </li>
 
