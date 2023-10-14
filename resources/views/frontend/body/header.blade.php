@@ -16,7 +16,7 @@ $room = App\Models\Rooms::latest()->get();
                             </div>
                             <div class="navbar__wrap main__menu d-none d-xl-flex " style="font-family: 'Noto Sans Thai', sans-serif;">
                                 <ul class="navigation">
-                                    <li class="active"><a href="{{ url('/') }}">หน้าแรก</a></li>
+                                    <li class=""><a href="{{ url('/') }}">หน้าแรก</a></li>
                                     <li><a href="{{ route('home.about')}}">เกี่ยวกับเรา</a></li>
                                     <li><a href="services-details.html">บริการ</a></li>
                                     <li class="menu-item-has-children"><a href="#">ห้องพัก</a>
@@ -32,15 +32,14 @@ $room = App\Models\Rooms::latest()->get();
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">ติดต่อเรา</a></li>
+                                    <li class="menu-item-has-children"><a href="#">ข้อมูลผู้ใช้</a>
+                                        <ul class="sub-menu">
+                                            {{-- <li><a href="{{ route('user.profile')}}">ข้อมูลส่วนตัว</a></li> --}}
+                                            <li><a href="{{ url('/payment')}}">รายการจอง</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="col-xl-3 col-lg-4 col-sm-6">
-                                <i class="fas fa-address-book"></i>
-                                 @foreach ($user.databooking as $item)
-                                    <p>{{user.databooking->booking_name}}</p>
-                                 @endforeach
-                            </div>
-
                             <div class="header__btn d-none d-md-block" style="font-family: 'Noto Sans Thai', sans-serif;">
                                 <a href="{{ route('all.room.details') }}" class="btn">จองห้องพัก</a>
                             </div>

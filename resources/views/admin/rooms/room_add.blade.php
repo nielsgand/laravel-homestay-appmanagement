@@ -31,6 +31,15 @@
                                         <span class="text-danger">{{ $message }}</span>
                                     @enderror
                             </div>
+                            <div class="mb-3">
+                                <label>ประเภทห้องพัก</label>
+                                <select class="form-control select2" name="room_type" id="room_type">
+                                    <option selected disabled>-- เลือกประเภทห้องพัก --</option>
+                                    @foreach ( $roomtype as $rt )
+                                        <option value="{{ $rt->id}}">{{$rt->room_type}}</option>
+                                    @endforeach
+                                </select>
+                            </div>
 
                             <div class="mb-3">
                                 <label>รายละเอียดห้องพัก</label>

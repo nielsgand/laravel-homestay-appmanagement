@@ -13,12 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('customers', function (Blueprint $table) {
-            $table->id('cus_id');
-            $table->string('name');
-            $table->string('email');
-            $table->string('phonenumber');
-            $table->string('address');
+        Schema::create('room_types', function (Blueprint $table) {
+            $table->id();
+            $table->string('room_type');
+            $table->string('room_price');
             $table->timestamps();
         });
     }
@@ -30,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('room_types');
     }
 };

@@ -9,4 +9,12 @@ class Booking extends Model
 {
     use HasFactory;
     protected $guarded = [];
+
+    function customer(){
+        return $this->belongsTo(Customer::class);
+    }
+
+    function room(){
+        return $this->belongsTo(Rooms::class);
+    }
 }

@@ -20,11 +20,11 @@
             <div class="row justify-content-center">
                 <div class="col-xl-6 col-lg-8 col-md-10">
                     <div class="breadcrumb__wrap__content">
-                        <h2 class="title">จองห้องพัก</h2>
+                        <h2 class="title">การชำระเงิน</h2>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                                 <li class="breadcrumb-item"><a href="index.html">หน้าแรก</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">จองห้องพัก</li>
+                                <li class="breadcrumb-item active" aria-current="page">การชำระเงิน</li>
                             </ol>
                         </nav>
                     </div>
@@ -34,13 +34,15 @@
     </section>
     <!-- breadcrumb-area-end -->
 
-    <!-- contact-area -->
+    <!-- Bookinglist-area -->
     <section class="homeContact homeContact__style__two">
         <div class="container">
             <div class="homeContact__wrap"><br><br><br><br>
+                <h3>รายการจอง</h3>
                 <form action="{{ route('user.databooking')}}" class="contact__form" method="post" enctype="multipart/form-data">
                     @csrf
                     <div class="row">
+                        <h3>รายการจอง</h3><br><br><br><br><br>
                         <div class="col-md-6">
                             <input type="text" placeholder="ชื่อ*" name="booking_name" value="">
                         </div>
@@ -54,10 +56,7 @@
                             <input name="ph_number" type="text" placeholder="เบอร์โทร*" value="">
                         </div>
                         <div class="col-md-6">
-                            <input name="room_id" type="hidden" placeholder="รหัสห้องพัก*" value="{{ $userbooking->room_id}}">
-                        </div>
-                        <div class="col-md-6">
-                            <input name="room_name" type="text" placeholder="ชื่อห้องพัก*" value="{{ $userbooking->room_name}}">
+                            <input name="room_id" type="text" placeholder="ชื่อห้อง*" value="">
                         </div>
                         <div class="col-md-3">
                             <input  name="room_type" type="text" placeholder="ประเภทห้อง*" value="">
@@ -67,19 +66,22 @@
                         </div>
 
                         <div class="col-md-6">
-                            <input name="arrival_date" type="text" placeholder="วันที่จะเข้าพัก*" value="{{ $userbooking->arrival_date}}">
+                            <input name="arrival_date" type="text" placeholder="วันที่จะเข้าพัก*" value="">
                         </div>
                         <div class="col-md-6">
-                            <input name="depature_date" type="text" placeholder="วันที่ออก*" value="{{ $userbooking->depature_date}}">
+                            <input name="depature_date" type="text" placeholder="วันที่ออก*" value="">
+                        </div>
+                        <div class="col-md-3">
+                            <input name="total_numbers" type="text" placeholder="ราคา" value="">
                         </div>
                     </div>
-                    <textarea name="message" id="message" placeholder="Enter your massage*"></textarea>
+
                     <button type="submit" value="DataBooking" class="btn">ยืนยันการจอง</button>
                 </form>
             </div>
         </div>
     </section>
-    <!-- contact-area-end -->
+    <!-- Bookinglist-area-end -->
 
 </main>
 <!-- main-area-end -->

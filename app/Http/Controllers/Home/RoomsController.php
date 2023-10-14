@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Rooms;
+use App\Models\RoomType;
 use Carbon\Carbon;
 use Intervention\Image\Facades\Image;
 // use Image;
@@ -19,7 +20,8 @@ class RoomsController extends Controller
     }
 
     public function AddRoom() {
-        return view('admin.rooms.room_add');
+        $roomtype = RoomType::all();
+        return view('admin.rooms.room_add', compact('roomtype'));
     }
 
     public function StoreRoom(Request $request) {
@@ -63,9 +65,6 @@ class RoomsController extends Controller
         $room = Rooms::findOrFail($id);
         return view('admin.rooms.room_edit' ,compact('room'));
     }
-
-
-
 
     public function UpdateRoom(Request $request) {
         $room_id = $request->id;

@@ -109,7 +109,10 @@
                                 {{-- <h2 class="title">Any questions? Feel free <br> to contact</h2> --}}
                             </div>
                             <div>
-                                <input class="form-control" type="hidden" value="{{ $allroom->id }}" name="room_id">
+                                <input class="form-control" type="text" value="{{ $allroom->id }}" name="room_id">
+                            </div>
+                            <div>
+                                <input class="form-control" type="text" value="{{ $allroom->room_name }}" name="room_name">
                             </div>
                             <div>
                                     <label class="form-label" style="font-family: 'Noto Sans Thai', sans-serif;"><b>วันที่เข้าพัก / วันที่ออก</b></label>
